@@ -1,0 +1,192 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magsingal Ilocos Sur</title>
+    <style>
+        /* Ensure that the body scales with viewport size */
+        body {
+            background-image: url('Background1.jpg'); /* Background image */
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* Keeps the image fixed when scrolling */
+            margin: 0;
+            font-family: 'Times New Roman', serif;
+            color: lightgrey;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Header Styling */
+        .header {
+            background-color: rgba(0, 0, 0, 0.4); /* Transparent background */
+            text-align: center;
+            padding: 1vh; /* Use viewport height for padding */
+            font-size: 3vw; /* Font scales with viewport width */
+            font-weight: bold;
+            color: white;
+            border-radius: 1vw;
+            width: 50vw; /* 60% of viewport width */
+            margin: 5vh auto; /* Center the header */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Divider line */
+        hr {
+            border: none;
+            border-top: 2px solid white;
+            width: 80%;
+            margin: 3vh auto;
+        }
+
+        /* Menu Table */
+        .menu-table {
+            background-color: rgba(0, 0, 0, 0.6); /* Transparent black */
+            color: white;
+            width: 75vw; /* 50% of the viewport width */
+            margin: 0 auto;
+            text-align: center;
+            border: 1px solid black;
+            font-size: 1vw; /* Font size scales with viewport width */
+            padding: 0.5vh;
+            border-radius: 1vw;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .menu-table th {
+            padding: 1vh;
+            cursor: pointer;
+        }
+
+        .menu-table th:hover {
+            background-color: lightpink;
+            color: black;
+        }
+
+        /* Tourist Spots Section */
+        .tourist-spots {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Increased min size for larger images */
+            gap: 20px;
+            width: 80vw; /* 80% of the viewport width */
+            margin: 1vh auto; /* Center the section */
+            padding: 2vh;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            border-radius: 1vw;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .spot {
+            background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
+            border-radius: 1vw;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .spot img {
+            width: 100%;
+            height: auto;
+            max-height: 300px; /* Fixed max height for images */
+            border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+        }
+
+        .spot-description {
+            padding: 1vh;
+            font-size: 1vw; /* Responsive font size */
+            color: black
+        }
+
+        /* Footer Styling */
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100vw;
+            height: 3vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: white;
+            font-size: 1vw;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        MAGSINGAL ILOCOS SUR
+    </div>
+
+    <hr>
+
+    <!-- Menu Table -->
+    <table class="menu-table">
+        <tr>
+            <th onclick="window.location.href='tourist.html'">TOURIST SPOTS</th>
+            <th onclick="window.location.href='products.html'">PRODUCTS</th>
+            <th onclick="window.location.href='history.html'">MAGSINGAL HISTORY</th>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- Tourist Spots Section -->
+    <div class="tourist-spots">
+        <div class="spot">
+            <img src="church.jpg" alt="Tourist Spot 1">
+            <div class="spot-description">
+                <h3>Magsingal Church</h3>
+                <p>Magsingal, a town in Ilocandia, has a genuine church built by the Spaniards with the sweat and blood of the townspeople. The first church was a temporary building built by Padre Juan Sanches in 1723. The church was burned down during the Ilocos Revolt by Diego Silang, but the ruins still exist. The present church was constructed in 1827, and the 30 meters high church belfry was built in 1832. The church is famous for its Baroque Snomonic Altar Retable and incomparable pulpit, which attracts locals, international visitors, and high government officials. The retable features a seascape with two nude mermaids guarding St. William the Hermit, the town's patron saint. The last Spanish priest of Magsingal was Fr. Jose Vasquez, who stayed in the town from 1863 to 1898.</p>
+            </div>
+        </div>
+        <div class="spot">
+            <img src="belfry.jpg" alt="Tourist Spot 2">
+            <div class="spot-description">
+                <h3>Magsingal Belfry</h3>
+                <p>The ancient belfry of massive construction of Magsingal, Ilocos Sur was built in February 16, 1732. Magnificently over the town projects an image of antiquity of its Castillan forebears creating nostalgic feeling of the remnants of the past of more than four centuries. Behind the majestic 30-meter tall old belfry is another edifice which was once the rectory of the friar parish priest built simultaneously with the church in 1676. Owing to the strong foundation of bricks, lime, and stone wrought with hard labor by the residents of the town it had withstood disastrous calamities of fires and earthquakes. The old rectory was converted into a school building that house the special training course during the early American regime. And during the Spanish occupation, the building serves as an interment residence in Magsingal because of the murdered Japanese Captain.</p>
+            </div>
+        </div>
+        <div class="spot">
+            <img src="museum.jpg" alt="Tourist Spot 3">
+            <div class="spot-description">
+                <h3>Magsingal Museum</h3>
+                <p>The Magsingal Museum in Ilocos Sur, a branch of the Department of Education, was inaugurated in 1982. Originally a convent of Spanish architecture, it was restored and transformed into a museum in 1982. The museum, located behind a centuries-old belfry, showcases the material culture of Northern Luzon. The museum, which was established to meet the Department of Education's goal of establishing more local and regional museums, was opened to the public in October 1982.</p>
+            </div>
+        </div>
+        <div class="spot">
+            <img src="Magsingal Historic Landscape.jpg" alt="Tourist Spot 4">
+            <div class="spot-description">
+                <h3>Ruins of the Old Church</h3>
+                <p>The Magsingal Church Complex, also called "Hermitania de Magsingal 1730” a National Cultural Treasure of the Archdiocese of Nueva Segovia.The Magsingal Church Complex includes the ruined walls and bell tower of the former Parish Church of San Guillermo de Aquitania, which was built in the 18th century under the Augustinians, the present church, and the old convent now the Magsingal Museum.</p>
+            </div>
+        </div>
+        <div class="spot">
+            <img src="municipal.jpg" alt="Tourist Spot 4">
+            <div class="spot-description">
+                <h3>Magsingal Municipal Hall</h3>
+                <p>Magsingal Municipal Hall was located at San Julian, Magsingal Ilocos Sur near the Magsingal Belfry, Magsingal Church, and Museum.</p>
+            </div>
+        </div>
+        <div class="spot">
+            <img src="Saint.jpg" alt="St. William Hallway">
+            <div class="spot-description">
+                <h3>St. William Hallway</h3>
+                <p>Located between St. William Institute and Magsingal Church.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        © 2024 Magsingal Ilocos Sur. All Rights Reserved.
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magsingal Ilocos Sur</title>
+    <style>
+        /* Ensure that the body scales with viewport size */
+        body {
+            background-image: url('Background1.jpg'); /* Background image */
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* Keeps the image fixed when scrolling */
+            margin: 0;
+            font-family: 'Times New Roman', serif;
+            color: lightgrey;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Header Styling */
+        .header {
+            background-color: rgba(0, 0, 0, 0.4); /* Transparent background */
+            text-align: center;
+            padding: 1vh; /* Use viewport height for padding */
+            font-size: 3vw; /* Font scales with viewport width */
+            font-weight: bold;
+            color: white;
+            border-radius: 1vw;
+            width: 50vw; /* 60% of viewport width */
+            margin: 5vh auto; /* Center the header */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Divider line */
+        hr {
+            border: none;
+            border-top: 2px solid white;
+            width: 80%;
+            margin: 3vh auto;
+        }
+
+        /* Menu Table */
+        .menu-table {
+            background-color: rgba(0, 0, 0, 0.6); /* Transparent black */
+            color: white;
+            width: 75vw; /* 50% of the viewport width */
+            margin: 0 auto;
+            text-align: center;
+            border: 1px solid black;
+            font-size: 1vw; /* Font size scales with viewport width */
+            padding: 0.5vh;
+            border-radius: 1vw;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .menu-table th {
+            padding: 1vh;
+            cursor: pointer;
+        }
+
+        .menu-table th:hover {
+            background-color: lightpink;
+            color: black;
+        }
+
+        /* Tourist Spots Section */
+        .tourist-spots {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Increased min size for larger images */
+            gap: 20px;
+            width: 80vw; /* 80% of the viewport width */
+            margin: 1vh auto; /* Center the section */
+            padding: 2vh;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            border-radius: 1vw;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .spot {
+            background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
+            border-radius: 1vw;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .spot img {
+            width: 100%;
+            height: auto;
+            max-height: 300px; /* Fixed max height for images */
+            border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+        }
+
+        .spot-description {
+            padding: 1vh;
+            font-size: 1vw; /* Responsive font size */
+            color: black
+        }
+
+        /* Footer Styling */
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100vw;
+            height: 3vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: white;
+            font-size: 1vw;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        MAGSINGAL ILOCOS SUR
+    </div>
+
+    <hr>
+
+    <!-- Menu Table -->
+    <table class="menu-table">
+        <tr>
+            <th onclick="window.location.href='tourist.html'">TOURIST SPOTS</th>
+            <th onclick="window.location.href='products.html'">PRODUCTS</th>
+            <th onclick="window.location.href='history.html'">MAGSINGAL HISTORY</th>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- Tourist Spots Section -->
+    <div class="tourist-spots">
+        <div class="spot">
+            <img src="product1.jpg" alt="Tourist Spot 1">
+            <div class="spot-description">
+                <h3>Magsingal Tinubong</h3>
+                <p>The tinubong is the 'One Town, One Product' of Magsingal. Tinubong means cooking a mixture of young coconut meat, sugar, margarine, cheese, and ground glutinous rice inside a young bamboo or tubong. This native rice delicacy is a favorite among the Ilocanos, which they usually serve during special occasions such as birthdays, Christmas, and New Year.</p>
+            </div>
+        </div>
+        <div class="spot">
+            <img src="product3.jpg" alt="Tourist Spot 2">
+            <div class="spot-description">
+                <h3>Magsingal Empanada</h3>
+                <p>Magsingal empanada is also one of the best products of Magsingal. One of the best empanadas is from Lucky and Neo's empanada, located near the Magsingal Belfry and Museum because they have a unique sauce called the 'dinuguan sauce' or, in Ilocano, its 'dara'.</p>
+            </div>
+        </div>
+        <div class="spot">
+            <img src="rice.jfif" alt="Tourist Spot 3">
+            <div class="spot-description">
+                <h3>Rice Production</h3>
+                <p>Agriculture dominates the municipality, occupying 45.56 percent of the total land area. This includes rice, corn, vegetables, tobacco, root crops, and fruit trees. Hilly areas have been converted to crop production, while agro-forest land covers 40.59 percent, used for bamboo, fruit, and non-fruit tree production in various parts.</p>
+            </div>
+        </div>
+        <div class="spot">
+            <img src="tobacco.jpg" alt="Tourist Spot 4">
+            <div class="spot-description">
+                <h3>Tobacco Production</h3>
+                <p>Agriculture dominates the municipality, occupying 45.56 percent of the total land area. This includes rice, corn, vegetables, tobacco, root crops, and fruit trees. Hilly areas have been converted to crop production, while agro-forest land covers 40.59 percent, used for bamboo, fruit, and non-fruit tree production in various parts.</p>
+            </div>
+        </div>
+        <div class="spot">
+            <img src="corn.avif" alt="Tourist Spot 4">
+            <div class="spot-description">
+                <h3>Corn Production</h3>
+                <p>Agriculture dominates the municipality, occupying 45.56 percent of the total land area. This includes rice, corn, vegetables, tobacco, root crops, and fruit trees. Hilly areas have been converted to crop production, while agro-forest land covers 40.59 percent, used for bamboo, fruit, and non-fruit tree production in various parts.</p>
+            </div>
+        </div>
+        <div class="spot">
+            <img src="Clay Pots.jpg" alt="St. William Hallway">
+            <div class="spot-description">
+                <h3>Clay Pots or Lusob</h3>
+                <p>Although they originated in Magsingal, clay pots and other goods really took off in Vigan. Ilocano's clay pots are lusob. Actually, even before, they get supplies from Vigan. Sadly, the location where the Magsingal people obtain their clay is too deep, therefore the items there did not flourish when they attempted to make clay products at that time.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        © 2024 Magsingal Ilocos Sur. All Rights Reserved.
+    </footer>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magsingal Ilocos Sur</title>
+    <style>
+        /* Ensure that the body scales with viewport size */
+        body {
+            background-image: url('Background1.jpg'); /* Background image */
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* Keeps the image fixed when scrolling */
+            margin: 0;
+            font-family: 'Times New Roman', serif;
+            color: lightgrey;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        /* Header Styling */
+        .header {
+            background-color: rgba(0, 0, 0, 0.4); /* Transparent background */
+            text-align: center;
+            padding: 1vh; /* Use viewport height for padding */
+            font-size: 3vw; /* Font scales with viewport width */
+            font-weight: bold;
+            color: white;
+            border-radius: 1vw;
+            width: 50vw; /* 60% of viewport width */
+            margin: 5vh auto; /* Center the header */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        /* Divider line */
+        hr {
+            border: none;
+            border-top: 2px solid white;
+            width: 80%;
+            margin: 3vh auto;
+        }
+
+        /* Menu Table */
+        .menu-table {
+            background-color: rgba(0, 0, 0, 0.6); /* Transparent black */
+            color: white;
+            width: 75vw; /* 50% of the viewport width */
+            margin: 0 auto;
+            text-align: center;
+            border: 1px solid black;
+            font-size: 1vw; /* Font size scales with viewport width */
+            padding: 0.5vh;
+            border-radius: 1vw;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .menu-table th {
+            padding: 1vh;
+            cursor: pointer;
+        }
+
+        .menu-table th:hover {
+            background-color: lightpink;
+            color: black;
+        }
+
+        /* Image Container */
+        .image-container {
+            background-color: background-color: rgba(0, 0, 0, 0.6); /* Transparent black */
+            border: 0.5px solid black;
+            padding: 1vh;
+            border-radius: 1vw;
+            width: 50vw; /* 50% of viewport width */
+            margin: 5vh auto;
+            text-align: center;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            max-height: 50vh; /* Max image height as 50% of viewport height */
+            border-radius: 1vw;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Footer Styling */
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100vw;
+            height: 3vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: white;
+            font-size: 1vw;
+            font-weight: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        MAGSINGAL ILOCOS SUR
+    </div>
+
+    <hr>
+
+    <!-- Menu Table -->
+    <table class="menu-table">
+        <tr>
+            <th onclick="window.location.href='tourist.html'">TOURIST SPOTS</th>
+            <th onclick="window.location.href='products.html'">PRODUCTS</th>
+            <th onclick="window.location.href='history.html'">MAGSINGAL HISTORY</th>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- Image Section -->
+    <div class="image-container">
+        <img src="agrimat.webp" alt="Magsingal Tourist Spot">
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Magsingal Ilocos Sur. All Rights Reserved.
+    </footer>
+
+</body>
+</html>

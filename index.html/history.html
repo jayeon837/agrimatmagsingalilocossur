@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magsingal Ilocos Sur</title>
+    <style>
+        /* Ensure that the body scales with viewport size */
+        body {
+            background-image: url('Background1.jpg'); /* Background image */
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* Keeps the image fixed when scrolling */
+            margin: 0;
+            font-family: 'Times New Roman', serif;
+            color: lightgrey;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Header Styling */
+        .header {
+            background-color: rgba(0, 0, 0, 0.4); /* Transparent background */
+            text-align: center;
+            padding: 1vh; /* Use viewport height for padding */
+            font-size: 3vw; /* Font scales with viewport width */
+            font-weight: bold;
+            color: white;
+            border-radius: 1vw;
+            width: 50vw; /* 60% of viewport width */
+            margin: 5vh auto; /* Center the header */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Divider line */
+        hr {
+            border: none;
+            border-top: 2px solid white;
+            width: 80%;
+            margin: 3vh auto;
+        }
+
+        /* Menu Table */
+        .menu-table {
+            background-color: rgba(0, 0, 0, 0.6); /* Transparent black */
+            color: white;
+            width: 75vw; /* 50% of the viewport width */
+            margin: 0 auto;
+            text-align: center;
+            border: 1px solid black;
+            font-size: 1vw; /* Font size scales with viewport width */
+            padding: 0.5vh;
+            border-radius: 1vw;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .menu-table th {
+            padding: 1vh;
+            cursor: pointer;
+        }
+
+        .menu-table th:hover {
+            background-color: lightpink;
+            color: black;
+        }
+
+        /* History Section */
+        .history-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 80vw;
+            margin: 2vh auto;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 2vh;
+            border-radius: 1vw;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .scrolling-images {
+            width:50vw;
+            height: 50vh;
+            overflow: hidden;
+            position: relative;
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            padding: 1vw;
+        }
+
+        .scrolling-images img {
+            width: 50vw;
+            height: 50vh;
+            margin-right: 20px;
+            display: inline-block;
+            border-radius: 1vw;
+        }
+
+
+        .scrolling-images-inner {
+            display: flex;
+            animation: scroll 20s linear infinite;
+        }
+
+        /* History text styling */
+        .history-text {
+            width: 100%;
+            padding: 2vw;
+            color: white;
+            font-size: 1.5vw;
+            text-align: justify; /* Justify text */
+        }
+
+        .history-text p {
+            text-indent: 20px; /* Indent each paragraph */
+            margin-bottom: 1.5vh; /* Add space below each paragraph */
+        }
+
+        /* Centering the heading */
+        .history-text h2 {
+            text-align: center; /* Center the text */
+            margin-bottom: 1.5vh; /* Add space below the heading */
+        }
+
+        /* Footer Styling */
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100vw;
+            height: 3vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: white;
+            font-size: 1vw;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        MAGSINGAL ILOCOS SUR
+    </div>
+
+    <hr>
+
+    <!-- Menu Table -->
+    <table class="menu-table">
+        <tr>
+            <th onclick="window.location.href='tourist.html'">TOURIST SPOTS</th>
+            <th onclick="window.location.href='products.html'">PRODUCTS</th>
+            <th onclick="window.location.href='history.html'">MAGSINGAL HISTORY</th>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- History Section -->
+    <div class="history-section">
+        <div class="scrolling-images">
+            <div class="scrolling-images-inner">
+                <img src="agrimat.webp" alt="Magsingal Belfry">
+            </div>
+        </div>
+
+        <div class="history-text">
+            <h2>History of Magsingal</h2>
+            <p>Year Founded. The town of Magsingal was founded in the year 1676 under orders of Captain Juan de Salcedo of the Spanish Army. </p>
+            
+            <p>The Spanish colonizers under the leadership of Captain Juan de Salcedo encountered a place which was called Malungon, a place situated southwest and about one kilometer away from the present poblacion. This place is presently a place where rice, virginia tobacco and garlic thrive with satisfaction in this municipality. This place was then under the rule of a woman ruler by the name Palungo Galcia (Garcia). This woman ruler was sturdy and with an exceptional strength. These Spanish colonizers brought with them several bells to be distributed to municipalities to be founded by them, one of which was a big bell to be allotted to the town of Magsingal. Upon arriving at Malungon, they offered this bell to the ruler Palungo Galcia, but this ruler flatly denied the offer to accept the big bell, and instead, she pointed to a place and simultaneously said, “MAYISINGAL”, or (Mayalis Sadiay), meaning, “Let it be transferred there.” This place pointed by Palungo Galcia is the present site of the town’s belfry which was then under the rule of her twin brothers Palungo Andoliguis (AndorIguis) and Palungo Tholentino (Tolentino). Since then, the Spaniards wrote and pronounced the name of this town as MAGSINGAL, a contraction of the word “MAYISINGAL”, or “MAYALIS SADIAY.</p>
+
+            <p>The Municipality of Magsingal was formerly about Two Thousand hectares (2,000 has.) in area, but as time went on, the area of the municipality was increased due to the annexation of these places, like Malungon, Bangay, Bangbangcag, Quinnuang, and Cabanayan. The former residents of Bangbangcag resented the annexation of their place to that of Palungo Andoliguis, so they fled to a place known as Bangcagan, which is within the municipality of Bucay, Abra now. Also, the former residents of Quinnuang resented the annexation of their place to that of Palungo Andoliguis, so they fled to a place known as Cadanglaan and Nangasumbaan, which were later on known as Rancheria de Cadanglaan and Rancheria de Nangasumbaan. These two places were later annexed to the jurisdiction of Palungo Andoliguis. Again, the people of Cabanayan resented the annexation of their place to that of Palungo Andoliguis and so they fled to a place known as Caunayan, which is now within the municipality of Nueva Era, Ilocos Norte. Due to these several annexations, the area of the Municipality of Magsingal was increased and is around Eight thousand hectares (8,000 has.) at present.</p>
+
+            <p>Ethnic Group and Religion. The first people of this municipality were Itnegs. They believed in many gods, like the sun, moon, stars, and earth. Up to these days, some people still commit mistake by saying, “Apo Init” or “Apo Bulan”, evidently transmitted to us by our forefathers. It was believed that the first people of this municipality came from the Malay Peninsula by bancas or barangays. All of the occupants of each banca or barangay settled in a certain place and the wealthiest, wisest, strongest and most fearful and courageous among them was recognized as the leader or ruler of the settled place. The ruler was called Cabeza de Barangay or “Apo Lakay” by the Itnegs. He was an acknowledged leader, authorized to settle disputes in accordance with the customs and traditions of their ancestors and of the people. Each barangay used to be the enemy of another barangay. They could not see eye to eye with the people of another barangay. There were six known barangays of this town before the Spanish period, namely; Bangay, Bangbangcag, Cabanayan, Quinnuang, and the place where the present poblacion is. There were no known rulers for these barangays except Garcia for Malungon, Andoriguis and Tolentino for the place where the present poblacion is situated. Those people who did not believe in Christianity when the Spanish colonizers came went eastward to the mountain and these people are still Itnegs nowadays and those who believed in Christianity are now Roman Catholics, which composed about 97.5% of the entire population of 24,449 of this municipality. All the rest are either Protestant, Iglesia ni Kristo, Pentecostal, Jehova’s Witnesses and others.</p>
+
+            <p>At present the municipality has thirty barangays including the barangays of the poblacion. On the north, Magsingal is bounded by San Juan (Lapog); on the East, by Abra; on the South, by Sto. Domingo; on the west, by the China Sea. It is 13 kilometers north of Vigan and about 420 kilometers from the City of Manila. Magsingal belongs to the first congressional district of Ilocos Sur.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        © 2024 Magsingal Ilocos Sur. All Rights Reserved.
+    </footer>
+</body>
+</html>
